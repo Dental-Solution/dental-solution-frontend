@@ -11,7 +11,7 @@ O **Dental Solution** é uma solução web desenvolvida para apoiar e otimizar a
 | David Pucinelli da Silva| RM576788 | Desenvolvimento Front-End & Estrutura HTML/CSS |
 | Enzo Henrique Debiage Câmara Fukimoto | RM575754 | Documentação Técnica & Testes de Interface |
 | Marcos Paulo de Souza | RM575557 | Revisão de Código e Supervisão |
-| Integrante 4 | RMxxxxxx | Revisão de Código & Controle de Versionamento |
+| Luiz Felipe Marques Gomes | RM576768 | Revisão de Código & Controle de Versionamento |
 
 ---
 
