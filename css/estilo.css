@@ -158,13 +158,14 @@ footer {
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
     margin-top: 1.5rem;
 }
 
 label {
     font-weight: bold;
     color: #003366;
+    margin-bottom: 3px;
 }
 
 input, textarea, select {
@@ -182,7 +183,7 @@ button[type="submit"] {
     padding: 0.9rem;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
