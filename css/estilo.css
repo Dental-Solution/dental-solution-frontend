@@ -10,9 +10,10 @@ body {
     background-color: #f4f7f6;
     color: #333333;
     line-height: 1.6;
+    min-width: 992px; /* Garante a área mínima de visualização Desktop */
 }
 
-/* 2. CABEÇALHO (Ajuste para o menu ficar na horizontal) */
+/* 2. CABEÇALHO */
 header {
     background-color: #2bb103;
     color: #ffffff;
@@ -23,9 +24,9 @@ header {
 }
 
 header nav ul {
-    list-style: none; /* Remove os pontos da lista */
-    display: flex;    /* Coloca os links lado a lado */
-    gap: 20px;        /* Espaço entre os links */
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 header nav a {
@@ -35,7 +36,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #00a8ff;
+    color: #003366;
 }
 
 /* 3. HERO BANNER */
@@ -81,7 +82,7 @@ header nav a:hover {
 /* 5. SEÇÃO DE ATUAÇÃO E CONTAINER DOS CARDS */
 .destaques {
     padding: 4rem 2rem;
-    text-align: center; /* Centraliza o H2 "Nossa Atuação" no topo */
+    text-align: center;
 }
 
 .destaques h2 {
@@ -90,12 +91,10 @@ header nav a:hover {
     font-size: 2rem;
 }
 
-/* Esta classe organiza os 3 cartões lado a lado */
 .card-container {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Faz os cards irem para baixo no telemóvel */
 }
 
 .card {
@@ -104,7 +103,6 @@ header nav a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     flex: 1;
-    min-width: 250px;
     max-width: 350px;
     text-align: center;
 }
@@ -123,14 +121,14 @@ footer {
     margin-top: 2rem;
 }
 
-/* 7. ESTILOS DE PAGINAS INTERNAS */
-.Conteudo-pagina{
+/* 7. ESTILOS DE PÁGINAS INTERNAS */
+.conteudo-pagina {
     max-width: 900px;
     margin: 3rem auto;
     padding: 2rem;
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .conteudo-pagina h2 {
@@ -138,19 +136,79 @@ footer {
     margin-bottom: 1rem;
     font-size: 2rem;
 }
+
 .conteudo-pagina p {
     font-size: 1.1rem;
     color: #555555;
     line-height: 1.8;
+    margin-bottom: 1rem;
 }
 
-/* 8 Estiliza lista internas dentro da caixa de conteúdo */
 .conteudo-pagina ul {
-   margin-left: 1.5rem;
-   margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .conteudo-pagina li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
     color: #444444;
+}
+
+/* 8. FORMULÁRIOS (CONTATO/FAQ) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    color: #003366;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #2bb103;
+    color: #ffffff;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #003366;
+}
+
+/* 9. TABELAS (INTEGRANTES) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
