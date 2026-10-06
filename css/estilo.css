@@ -1,0 +1,156 @@
+/* 1. RESET E CORPO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* 2. CABEÇALHO (Ajuste para o menu ficar na horizontal) */
+header {
+    background-color: #2bb103;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none; /* Remove os pontos da lista */
+    display: flex;    /* Coloca os links lado a lado */
+    gap: 20px;        /* Espaço entre os links */
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #00a8ff;
+}
+
+/* 3. HERO BANNER */
+.hero {
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/banner.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+/* 4. BOTÃO PRINCIPAL */
+.btn-principal {
+    display: inline-block;
+    background-color: #36b305;
+    color: #ffffff;
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #0077b6;
+}
+
+/* 5. SEÇÃO DE ATUAÇÃO E CONTAINER DOS CARDS */
+.destaques {
+    padding: 4rem 2rem;
+    text-align: center; /* Centraliza o H2 "Nossa Atuação" no topo */
+}
+
+.destaques h2 {
+    margin-bottom: 2rem;
+    color: #003366;
+    font-size: 2rem;
+}
+
+/* Esta classe organiza os 3 cartões lado a lado */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Faz os cards irem para baixo no telemóvel */
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+/* 6. RODAPÉ */
+footer {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* 7. ESTILOS DE PAGINAS INTERNAS */
+.Conteudo-pagina{
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.conteudo-pagina h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.conteudo-pagina p {
+    font-size: 1.1rem;
+    color: #555555;
+    line-height: 1.8;
+}
+
+/* 8 Estiliza lista internas dentro da caixa de conteúdo */
+.conteudo-pagina ul {
+   margin-left: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+
+.conteudo-pagina li {
+    margin-bottom: 1.5rem;
+    color: #444444;
+}
