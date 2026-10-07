@@ -1,19 +1,38 @@
-/* 1. RESET E CORPO */
+/*1. RESET E ESTRUTURA PRINCIPAL*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    height: 100%; /* Garante que o HTML ocupe toda a altura da janela */
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f7f6;
     color: #333333;
     line-height: 1.6;
     min-width: 992px; /* Garante a área mínima de visualização Desktop */
+    min-height: 100vh; /* Ocupa 100% da altura da tela visível */
+    
+    /* Configuração Flexbox para empurrar o rodapé para baixo */
+    display: flex;
+    flex-direction: column;
+
+    /* Configuração padrão para imagens de fundo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-/* 2. CABEÇALHO */
+/* Faz a tag <main> expandir para ocupar todo o espaço vago */
+main {
+    flex: 1;
+}
+
+/*2. CABEÇALHO*/
 header {
     background-color: #2bb103;
     color: #ffffff;
@@ -39,7 +58,7 @@ header nav a:hover {
     color: #003366;
 }
 
-/* 3. HERO BANNER */
+/*3. HERO BANNER (PÁGINA INICIAL) */
 .hero {
     min-height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/banner.jpg') no-repeat center center/cover;
@@ -63,7 +82,7 @@ header nav a:hover {
     margin-bottom: 1.5rem;
 }
 
-/* 4. BOTÃO PRINCIPAL */
+/*4. BOTÃO PRINCIPAL*/
 .btn-principal {
     display: inline-block;
     background-color: #36b305;
@@ -79,7 +98,7 @@ header nav a:hover {
     background-color: #0077b6;
 }
 
-/* 5. SEÇÃO DE ATUAÇÃO E CONTAINER DOS CARDS */
+/* 5. SEÇÃO DE ATUAÇÃO E CONTAINER DOS CARDS*/
 .destaques {
     padding: 4rem 2rem;
     text-align: center;
@@ -112,23 +131,43 @@ header nav a:hover {
     margin-bottom: 1rem;
 }
 
-/* 6. RODAPÉ */
-footer {
-    background-color: #111111;
-    color: #ffffff;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
+/* 6. IMAGENS DE FUNDO ESPECÍFICAS DE CADA PÁGINA*/
+body.pagina-home {
+    background-image: url('../img/fundo-home.jpg');
 }
 
-/* 7. ESTILOS DE PÁGINAS INTERNAS */
+body.pagina-sobre {
+    background-image: url('../img/fundo-sobre.jpg');
+}
+
+body.pagina-solucao {
+    background-image: url('../img/fundo-solucao.jpg');
+}
+
+body.pagina-mural {
+    background-image: url('../img/fundo-mural.jpg');
+}
+
+body.pagina-integrantes {
+    background-image: url('../img/fundo-integrantes.jpg');
+}
+
+body.pagina-faq {
+    background-image: url('../img/fundo-faq.jpg');
+}
+
+body.pagina-contato {
+    background-image: url('../img/fundo-contato.jpg');
+}
+
+/*  7. ESTILOS DE PÁGINAS INTERNAS (CARTÃO CENTRAL)*/
 .conteudo-pagina {
-    max-width: 900px;
+    max-width: 992px;
     margin: 3rem auto;
     padding: 2rem;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .conteudo-pagina h2 {
@@ -154,7 +193,7 @@ footer {
     color: #444444;
 }
 
-/* 8. FORMULÁRIOS (CONTATO/FAQ) */
+/* 8. FORMULÁRIOS (CONTATO/FAQ)*/
 form {
     display: flex;
     flex-direction: column;
@@ -192,7 +231,7 @@ button[type="submit"]:hover {
     background-color: #003366;
 }
 
-/* 9. TABELAS (INTEGRANTES) */
+/*9. TABELAS (INTEGRANTES/MURAL)*/
 table {
     width: 100%;
     border-collapse: collapse;
@@ -212,4 +251,13 @@ th {
 
 tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+/* 10. RODAPÉ (Preso sempre no final da página)*/
+footer {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
 }
