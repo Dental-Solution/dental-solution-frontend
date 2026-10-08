@@ -6,6 +6,7 @@ O **Dental Solution** é uma solução web desenvolvida para apoiar e otimizar a
 ---
 
 ## 👥 Integrantes do Grupo
+<img src="Downloads/image.png" alt="Descrição da Imagem" width="500" align="center">
 | Nome Completo | RM | Responsabilidade / Atuação |
 | :--- | :--- | :--- |
 | David Pucinelli da Silva| RM576788 | Desenvolvimento Front-End & Estrutura HTML/CSS |
