@@ -39,6 +39,9 @@ Caso tenha dúvidas, sugestões ou precise de suporte relacionado a este projeto
 *Projeto desenvolvido para apoio e otimização dos atendimentos da ONG Turma do Bem.*
 
 ---
+[![GitHub Repository](https://github.com/Dental-Solution/dental-solution-frontend.git)
+
+---
 ## 📁 Estrutura do Repositório
 ```text
 dental-solution/
