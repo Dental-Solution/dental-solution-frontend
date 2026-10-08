@@ -22,8 +22,8 @@ O **Dental Solution** é uma solução web desenvolvida para apoiar e otimizar a
 ---
 ## 📸 Demonstração do Sistema
 
-![Página Inicial](inicial.png)
-![Página Sobre](Sobre.png)
+![Página Inicial](img/inicial.png)
+![Página Sobre](img/Sobre.png)
 
 ---
 ## ✉️ Contato e Suporte
