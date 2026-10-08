@@ -6,7 +6,7 @@ O **Dental Solution** é uma solução web desenvolvida para apoiar e otimizar a
 ---
 
 ## 👥 Integrantes do Grupo
-| Nome Completo | RM | Turma | Responsabilidade / Atuação | LinkedIn e GitHub |
+| Nome Completo | RM | Turma | Responsabilidade / Atuação |
 | :--- | :--- | :--- |
 | <img src="img/DavidPucinelli.jpeg" width="40" alt="David"> David Pucinelli da Silva | RM576788 | 1DTSPB | Desenvolvimento Front-End & Estrutura HTML/CSS |
 | <img src="img/EnzoFukimoto.jpg" width="40" alt="Enzo"> Enzo Henrique Debiage Câmara Fukimoto | RM575754 | 1DSTPB | Documentação Técnica & Testes de Interface |
