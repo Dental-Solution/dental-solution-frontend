@@ -131,7 +131,7 @@ header nav a:hover {
 
 /* Backgrounds por Página */
 body.pagina-home {
-    background-image: url('img/fundo-home.jpg'); 
+    background-image: url('../img/fundo-home.jpg'); 
 }
 
 body.pagina-sobre {
