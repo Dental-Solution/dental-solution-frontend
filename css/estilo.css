@@ -29,19 +29,34 @@ main {
 }
 
 /* Cabeçalho e Navegação */
+/* Cabeçalho e Navegação */
 header {
     background-color: #2bb103;
     color: #ffffff;
-    padding: 1.5rem 2rem;
+    padding: 0.8rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-header {
+    height: 45px;
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 header nav a {
@@ -248,6 +263,56 @@ th {
 
 tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+/* Seção e Cards de Depoimentos no Mural */
+.secao-depoimentos {
+    margin-top: 2.5rem;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.depoimento {
+    background-color: #f9f9f9;
+    border-left: 4px solid #2bb103;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.depoimento p {
+    margin-bottom: 0.5rem;
+}
+
+.depoimento p strong {
+    color: #003366;
+}
+
+/* Estilização da Página de FAQ */
+.faq-item {
+    margin-top: 10px;
+}
+
+.subtitulo-categoria {
+    margin-top: 2rem;
+}
+
+/* Botão Principal da Home */
+.container-botao {
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* Seção de Destaque de Apoiadores */
+.destaques-doadores {
+    margin-top: 3rem;
+}
+
+.doadores-cards {
+    margin-top: 1.5rem;
 }
 
 /* Rodapé */
