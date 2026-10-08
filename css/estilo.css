@@ -1,4 +1,4 @@
-/*1. RESET E ESTRUTURA PRINCIPAL*/
+/* Reset e Estrutura Global */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 html {
-    height: 100%; /* Garante que o HTML ocupe toda a altura da janela */
+    height: 100%;
 }
 
 body {
@@ -17,21 +17,18 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
-    /* Configuração padrão do fundo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: transparent; 
+    background-color: #f4f7f6; 
 }
 
-/* Faz a tag <main> expandir para ocupar todo o espaço vago */
 main {
     flex: 1;
 }
 
-/*2. CABEÇALHO*/
+/* Cabeçalho e Navegação */
 header {
     background-color: #2bb103;
     color: #ffffff;
@@ -51,13 +48,14 @@ header nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.2s ease-in-out;
 }
 
 header nav a:hover {
     color: #003366;
 }
 
-/*3. HERO BANNER (PÁGINA INICIAL) */
+/* Hero Section - Banner da Home */
 .hero {
     min-height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/banner.jpg') no-repeat center center/cover;
@@ -81,7 +79,7 @@ header nav a:hover {
     margin-bottom: 1.5rem;
 }
 
-/*4. BOTÃO PRINCIPAL*/
+/* Botões */
 .btn-principal {
     display: inline-block;
     background-color: #36b305;
@@ -90,14 +88,14 @@ header nav a:hover {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .btn-principal:hover {
     background-color: #0077b6;
 }
 
-/* 5. SEÇÃO DE ATUAÇÃO E CONTAINER DOS CARDS*/
+/* Seção de Destaques e Cards */
 .destaques {
     padding: 4rem 2rem;
     text-align: center;
@@ -117,23 +115,23 @@ header nav a:hover {
 }
 
 .card {
-  background-color: #ffffff;
+    background-color: #ffffff;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
     flex: 1;
     max-width: 350px;
     text-align: center;
+}
 
 .card h3 {
     color: #003366;
     margin-bottom: 1rem;
 }
 
-/* 6. IMAGENS DE FUNDO ESPECÍFICAS DE CADA PÁGINA*/
+/* Backgrounds por Página */
 body.pagina-home {
-    background-image: url('../img/fundo-home.jpg'); 
-}
+    background-image: url('img/fundo-home.jpg'); 
 }
 
 body.pagina-sobre {
@@ -160,7 +158,7 @@ body.pagina-contato {
     background-image: url('../img/fundo-contato.jpg');
 }
 
-/*  7. ESTILOS DE PÁGINAS INTERNAS (CARTÃO CENTRAL)*/
+/* Conteúdo das Páginas Internas */
 .conteudo-pagina {
     max-width: 992px;
     margin: 3rem auto;
@@ -183,7 +181,7 @@ body.pagina-contato {
     margin-bottom: 1rem;
 }
 
-.conteudo-pagina ul {
+.conteudo-pagina ul, .conteudo-pagina ol {
     margin-left: 1.5rem;
     margin-bottom: 1.5rem;
 }
@@ -193,18 +191,17 @@ body.pagina-contato {
     color: #444444;
 }
 
-/* 8. FORMULÁRIOS (CONTATO/FAQ)*/
+/* Formulários */
 form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     margin-top: 1.5rem;
 }
 
 label {
     font-weight: bold;
     color: #003366;
-    margin-bottom: 3px;
 }
 
 input, textarea, select {
@@ -222,7 +219,7 @@ button[type="submit"] {
     padding: 0.9rem;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -231,7 +228,7 @@ button[type="submit"]:hover {
     background-color: #003366;
 }
 
-/*9. TABELAS (INTEGRANTES/MURAL)*/
+/* Tabelas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -253,7 +250,7 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* 10. RODAPÉ (Preso sempre no final da página)*/
+/* Rodapé */
 footer {
     background-color: #111111;
     color: #ffffff;
