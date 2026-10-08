@@ -10,7 +10,7 @@ O **Dental Solution** é uma solução web desenvolvida para apoiar e otimizar a
 | :--- | :---: | :---: | :--- | :---: | :---: |
 | <img src="img/DavidPucinelli.jpeg" width="40" alt="David"> David Pucinelli da Silva | RM576788 | 1TDSPB | Desenvolvimento Front-End & Estrutura HTML/CSS | [LinkedIn](https://www.linkedin.com/in/david-pucinelli-b326a9257/) | [GitHub](https://github.com/DavidPucinelli) |
 | <img src="img/EnzoFukimoto.jpg" width="40" alt="Enzo"> Enzo Henrique Debiage Câmara Fukimoto | RM575754 | 1TDSPB | Documentação Técnica & Testes de Interface | [LinkedIn](https://www.linkedin.com/in/enzo-câmara-a691b8318/) | [GitHub](https://github.com/Enzofukimoto) |
-| <img src="img/Marcos.jpeg" width="40" alt="Marcos"> Marcos Paulo de Souza | RM575557 | 1TDSPB | Revisão de Código e Supervisão | [LinkedIn](https://www.linkedin.com/in/marcos-souza-50615b180/) | [GitHub](https://github.com/Enzofukimoto) |
+| <img src="img/Marcos.jpeg" width="40" alt="Marcos"> Marcos Paulo de Souza | RM575557 | 1TDSPB | Revisão de Código e Supervisão | [LinkedIn](https://www.linkedin.com/in/marcos-souza-50615b180/) | [GitHub](https://github.com/MarcosPaulo13) |
 | <img src="img/Luiz.jpg" width="40" alt="Luiz"> Luiz Felipe Marques Gomes | RM576768 | 1TDSPB | Revisão de Código & Controle de Versionamento | [LinkedIn](https://www.linkedin.com/in/luiz-felipe-marques-gomes-036b90335/) | [GitHub](https://github.com/luizfelipe-m) |
 ---
 
@@ -20,7 +20,25 @@ O **Dental Solution** é uma solução web desenvolvida para apoiar e otimizar a
 * **Git & GitHub**: Controle de versão e colaboração em equipe via *Conventional Commits*.
 
 ---
+## 📸 Demonstração do Sistema
 
+![Página Inicial](img/home-preview.png)
+![Página de Triagem](img/triagem-preview.png)
+
+---
+## ✉️ Contato e Suporte
+
+Caso tenha dúvidas, sugestões ou precise de suporte relacionado a este projeto, entre em contato com os desenvolvedores:
+
+* **David Pucinelli da Silva** - [LinkedIn](https://www.linkedin.com/in/david-pucinelli-b326a9257/) | [GitHub](https://github.com/DavidPucinelli)
+* **Enzo Henrique Debiage Câmara Fukimoto** - [LinkedIn](https://www.linkedin.com/in/enzo-câmara-a691b8318/) | [GitHub](https://github.com/Enzofukimoto)
+* **Marcos Paulo de Souza** - [LinkedIn](https://www.linkedin.com/in/marcos-souza-50615b180/) | [GitHub](https://github.com/MarcosPaulo13)
+* **Luiz Felipe Marques Gomes** - [LinkedIn](https://www.linkedin.com/in/luiz-felipe-marques-gomes-036b90335/) | [GitHub](https://github.com/luizfelipe-m)
+
+---
+*Projeto desenvolvido para apoio e otimização dos atendimentos da ONG Turma do Bem.*
+
+---
 ## 📁 Estrutura do Repositório
 ```text
 dental-solution/
@@ -37,3 +55,5 @@ dental-solution/
 │   └── solucao.html
 ├── index.html
 └── README.md
+
+
