@@ -6,13 +6,12 @@ O **Dental Solution** é uma solução web desenvolvida para apoiar e otimizar a
 ---
 
 ## 👥 Integrantes do Grupo
-| Nome Completo | RM | Responsabilidade / Atuação |
-| :--- | :--- | :--- |
-| David Pucinelli da Silva| RM576788 | Desenvolvimento Front-End & Estrutura HTML/CSS |
-| Enzo Henrique Debiage Câmara Fukimoto | RM575754 | Documentação Técnica & Testes de Interface |
-| Marcos Paulo de Souza | RM575557 | Revisão de Código e Supervisão |
-| Luiz Felipe Marques Gomes | RM576768 | Revisão de Código & Controle de Versionamento |
-
+| Nome Completo | RM | Turma | Responsabilidade / Atuação | LinkedIn | GitHub |
+| :--- | :---: | :---: | :--- | :---: | :---: |
+| <img src="img/DavidPucinelli.jpeg" width="40" alt="David"> David Pucinelli da Silva | RM576788 | 1TDSPB | Desenvolvimento Front-End & Estrutura HTML/CSS | [LinkedIn]([https://www.linkedin.com/in/david-pucinelli-b326a9257/]) | [GitHub]([https://github.com/DavidPucinelli]) |
+| <img src="img/EnzoFukimoto.jpg" width="40" alt="Enzo"> Enzo Henrique Debiage Câmara Fukimoto | RM575754 | 1TDSPB | Documentação Técnica & Testes de Interface | [LinkedIn](https://www.linkedin.com/in/enzo-câmara-a691b8318/) | [GitHub](https://github.com/SEU_GITHUB) |
+| <img src="img/Marcos.jpeg" width="40" alt="Marcos"> Marcos Paulo de Souza | RM575557 | 1TDSPB | Revisão de Código e Supervisão | [LinkedIn](https://linkedin.com/in/SEU_LINKEDIN) | [GitHub](https://github.com/SEU_GITHUB) |
+| <img src="img/Luiz.jpg" width="40" alt="Luiz"> Luiz Felipe Marques Gomes | RM576768 | 1TDSPB | Revisão de Código & Controle de Versionamento | [LinkedIn](https://linkedin.com/in/SEU_LINKEDIN) | [GitHub](https://github.com/SEU_GITHUB) |
 ---
 
 ## 💻 Tecnologias Utilizadas
