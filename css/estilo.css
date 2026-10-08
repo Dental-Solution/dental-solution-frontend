@@ -13,18 +13,17 @@ body {
     font-family: Arial, sans-serif;
     color: #333333;
     line-height: 1.6;
-    min-width: 992px; /* Garante a área mínima de visualização Desktop */
-    min-height: 100vh; /* Ocupa 100% da altura da tela visível */
-    
-    /* Configuração Flexbox para empurrar o rodapé para baixo */
+    min-width: 992px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 
-    /* Configuração padrão para imagens de fundo */
+    /* Configuração padrão do fundo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-color: transparent; 
 }
 
 /* Faz a tag <main> expandir para ocupar todo o espaço vago */
@@ -102,6 +101,7 @@ header nav a:hover {
 .destaques {
     padding: 4rem 2rem;
     text-align: center;
+    background-color: #f4f7f6;
 }
 
 .destaques h2 {
@@ -117,14 +117,13 @@ header nav a:hover {
 }
 
 .card {
-    background-color: #ffffff;
+  background-color: #ffffff;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
     flex: 1;
     max-width: 350px;
     text-align: center;
-}
 
 .card h3 {
     color: #003366;
@@ -133,7 +132,8 @@ header nav a:hover {
 
 /* 6. IMAGENS DE FUNDO ESPECÍFICAS DE CADA PÁGINA*/
 body.pagina-home {
-    background-image: url('../img/fundo-home.jpg');
+    background-image: url('../img/fundo-home.jpg'); 
+}
 }
 
 body.pagina-sobre {
