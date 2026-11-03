@@ -1,109 +1,132 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Dental Solution</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-</head>
-<body class="pagina-faq">
-
-    <header>
-    <a href="../index.html" class="logo-link">
-        <img src="../img/logo.jpg" alt="Logo Dental Solution" class="logo-header">
-    </a>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Perguntas frequentes sobre a proposta visual da Dental Solution." />
+    <title>FAQ | Dental Solution</title>
+    <link rel="stylesheet" href="../css/estilo.css?v=20261103-1651" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body class="pagina-faq">
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+    <!-- Cabeçalho e navegação principal -->
+    <header class="site-header">
+      <div class="header-content">
+        <a href="../index.html" class="logo-link" aria-label="Dental Solution: voltar para a página inicial">
+          <img
+            src="../img/web/logo.webp"
+            alt="Logo da Dental Solution"
+            class="logo-header"
+            width="48"
+            height="48"
+          />
+          <span>
+            <span class="logo-name">Dental Solution</span>
+            <span class="logo-tagline">Conexões que transformam sorrisos</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-menu-toggle
+          aria-label="Abrir menu principal"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" data-site-nav aria-label="Navegação principal">
+          <ul>
+            <li><a href="../index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="solucao.html">Solução</a></li>
+            <li><a href="triagem.html">Triagem</a></li>
             <li><a href="mural.html">Mural</a></li>
-            <li><a href="integrantes.html">Integrantes</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="integrantes.html">Equipe</a></li>
+            <li><a href="faq.html" aria-current="page">FAQ</a></li>
             <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <section class="conteudo-pagina">
-        <h2>Perguntas Frequentes (FAQ)</h2>
-        <p>Esclareça as suas dúvidas sobre o funcionamento da plataforma, os critérios de triagem e como apoiar a nossa causa.</p>
-
-        <!-- ATENDIMENTOS E TRIAGEM -->
-        <h3>Atendimentos e Triagem</h3>
-
-        <details class="faq-item">
-            <summary><strong>Quem tem direito ao atendimento gratuito?</strong></summary>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main" id="conteudo-principal">
+      <!-- Introdução do FAQ -->
+      <section class="page-intro" aria-labelledby="titulo-principal">
+        <span class="eyebrow">Dúvidas frequentes</span>
+        <h1 id="titulo-principal">Entenda a proposta da Dental Solution</h1>
+        <p class="lead">
+          Saiba quem a proposta busca apoiar, como funciona a jornada e como as informações são tratadas.
+        </p>
+      </section>
+      <section class="page-shell content-card" aria-labelledby="atendimentos">
+        <h2 id="atendimentos">Atendimentos e triagem</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Quem a proposta busca apoiar?</summary>
             <p>
-                O programa atende prioritariamente dois públicos: jovens de 11 a 17 anos em situação de vulnerabilidade social (projeto Dentista do Bem) e mulheres vítimas de violência doméstica (projeto Apolônias do Bem).
+              A proposta apresenta uma interface voltada a jovens em situação de vulnerabilidade social e
+              mulheres que necessitam de acolhimento, além de tornar visível a rede de dentistas voluntários e
+              parceiros.
             </p>
-        </details>
-
-        <details class="faq-item">
-            <summary><strong>Como funciona o processo de triagem?</strong></summary>
+          </details>
+          <details class="faq-item">
+            <summary>Como funciona a jornada de triagem?</summary>
             <p>
-                A pré-triagem é feita via Telegram ou pelo formulário do site. O nosso sistema avalia automaticamente critérios de urgência, renda familiar e localização para direcionar o paciente ao dentista parceiro mais próximo.
+              A jornada organiza três momentos: perfil, contexto e preferência de orientação. As escolhas
+              atualizam um resumo na tela e não são enviadas, guardadas ou usadas para diagnóstico.
             </p>
-        </details>
-
-        <details class="faq-item">
-            <summary><strong>Quais procedimentos odontológicos estão incluídos?</strong></summary>
+          </details>
+          <details class="faq-item">
+            <summary>O resultado da triagem é uma avaliação odontológica?</summary>
             <p>
-                O tratamento é 100% gratuito e integral. Cobre desde procedimentos básicos (como limpezas, restaurações e aplicação de flúor) até tratamentos mais complexos (como canal, cirurgias e próteses), visando a total reabilitação bucal.
+              Não. O resultado é educativo, não substitui uma avaliação odontológica e não define
+              elegibilidade ou encaminhamento. Em caso de dor intensa, procure um serviço de saúde bucal ou
+              urgência local.
             </p>
-        </details>
-
-        <details class="faq-item">
-            <summary><strong>Quanto tempo demora para iniciar o tratamento após a triagem?</strong></summary>
+          </details>
+        </div>
+      </section>
+      <section class="page-shell content-card" aria-labelledby="seguranca">
+        <h2 id="seguranca">Privacidade, voluntariado e parcerias</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>A Dental Solution coleta dados pessoais?</summary>
             <p>
-                O tempo varia de acordo com a disponibilidade de dentistas voluntários na região do paciente. No entanto, o algoritmo da plataforma prioriza casos de dor aguda e emergências para encaminhamento rápido.
+              Não. O formulário e a jornada funcionam nesta página: as informações não são enviadas a um
+              servidor e não ficam guardadas depois que você sai.
             </p>
-        </details>
-
-        <!-- VOLUNTARIADO E PARCERIAS -->
-        <h3 class="subtitulo-categoria">Voluntariado e Parcerias</h3>
-
-        <details class="faq-item">
-            <summary><strong>Sou dentista, como posso tornar-me um voluntário?</strong></summary>
+          </details>
+          <details class="faq-item">
+            <summary>Como um dentista voluntário pode participar da rede?</summary>
             <p>
-                Pode registar-se diretamente pela nossa página de Contato ou selecionar a opção de voluntariado no nosso Chatbot. Após a validação do seu registo profissional (CRO), entrará na rede para receber pacientes no seu próprio consultório.
+              A proposta de atuação prevê cadastro, verificação profissional e organização de disponibilidade
+              junto às organizações parceiras. Para conversar sobre a rede, use a página Contato.
             </p>
-        </details>
-
-        <details class="faq-item">
-            <summary><strong>Empresas podem apoiar a iniciativa?</strong></summary>
+          </details>
+          <details class="faq-item">
+            <summary>Os indicadores do Mural representam dados reais?</summary>
             <p>
-                Sim! As empresas podem apoiar a plataforma através de doações diretas, patrocínio de insumos odontológicos ou parcerias institucionais. Entre em contacto connosco para saber mais.
+              Os indicadores apresentados no Mural são referências de trabalho e servem para exemplificar como
+              resultados e acompanhamentos poderiam ser comunicados visualmente.
             </p>
-        </details>
-
-        <details class="faq-item">
-            <summary><strong>Como é garantida a segurança dos meus dados pessoais?</strong></summary>
-            <p>
-                A plataforma Dental Solution segue rigorosamente as diretrizes da LGPD (Lei Geral de Proteção de Dados). As suas informações de saúde e localização são encriptadas e utilizadas exclusivamente para o agendamento de consultas.
-            </p>
-        </details>
-        
-        <details class="faq-item">
-            <summary><strong>Como funciona a classificação de doadores no Funil de Engajamento?</strong></summary>
-            <p>
-                O nosso sistema analisa a frequência, tempo de relacionamento e histórico de contribuições para classificar apoiadores em categorias (como Potencial Doador, Recorrente ou Grande Doador), permitindo ações de relacionamento personalizadas.
-            </p>
-        </details>
-
-        <details class="faq-item">
-            <summary><strong>Posso fazer doações mantendo o meu nome em anonimato?</strong></summary>
-            <p>
-                Sim. Em conformidade com a LGPD, os destaques públicos de doadores na plataforma dependem da autorização prévia do utilizador. Caso prefira, a sua contribuição será registada de forma 100% anónima.
-            </p>
-        </details>
-    </section>
-</main>
-
-    <footer>
-        <p>&copy; 2026 Dental Solution - Projeto desenvolvido para a Turma do Bem e FIAP.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>© 2026 Dental Solution. Projeto acadêmico desenvolvido para o Challenge FIAP.</p>
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

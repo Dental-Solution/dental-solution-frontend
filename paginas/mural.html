@@ -1,99 +1,214 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mural de Impacto - Dental Solution</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-</head>
-<body class="pagina-mural">
-
-    <header>
-    <a href="../index.html" class="logo-link">
-        <img src="../img/logo.jpg" alt="Logo Dental Solution" class="logo-header">
-    </a>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mural de impacto da Dental Solution." />
+    <title>Mural de Impacto | Dental Solution</title>
+    <link rel="stylesheet" href="../css/estilo.css?v=20261103-1651" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body class="pagina-mural">
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+    <!-- Cabeçalho e navegação principal -->
+    <header class="site-header">
+      <div class="header-content">
+        <a href="../index.html" class="logo-link" aria-label="Dental Solution: voltar para a página inicial">
+          <img
+            src="../img/web/logo.webp"
+            alt="Logo da Dental Solution"
+            class="logo-header"
+            width="48"
+            height="48"
+          />
+          <span>
+            <span class="logo-name">Dental Solution</span>
+            <span class="logo-tagline">Conexões que transformam sorrisos</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-menu-toggle
+          aria-label="Abrir menu principal"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" data-site-nav aria-label="Navegação principal">
+          <ul>
+            <li><a href="../index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="solucao.html">Solução</a></li>
-            <li><a href="mural.html">Mural</a></li>
-            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="triagem.html">Triagem</a></li>
+            <li><a href="mural.html" aria-current="page">Mural</a></li>
+            <li><a href="integrantes.html">Equipe</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</header>
-
-    <main class="conteudo-pagina">
-        <h2>Mural de Impacto</h2>
-        <p>Acompanhe como a tecnologia vem ajudando a impulsionar as ações da Turma do Bem em todo o país.</p>
-
-        <section>
-            <h3>Indicadores do Projeto</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Indicador</th>
-                        <th>Região</th>
-                        <th>Meta Anual</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Jovens Atendidos (Dentista do Bem)</td>
-                        <td>Nacional</td>
-                        <td>5.000 triagens</td>
-                        <td>Em Andamento</td>
-                    </tr>
-                    <tr>
-                        <td>Mulheres Beneficiadas (Apolônias)</td>
-                        <td>Sudeste / Nordeste</td>
-                        <td>1.200 atendimentos</td>
-                        <td>Concluído</td>
-                    </tr>
-                    <tr>
-                        <td>Dentistas Voluntários</td>
-                        <td>Brasil</td>
-                        <td>800 profissionais</td>
-                        <td>Em Expansão</td>
-                    </tr>
-                    <tr>
-                        <td>Redução no Tempo de Espera</td>
-                        <td>Plataforma Digital</td>
-                        <td>30% de agilidade</td>
-                        <td>Alcançado</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="secao-depoimentos">
-    <h3>Depoimentos</h3>
-
-    <div class="depoimentos">
-        <div class="depoimento">
-            <p>"A plataforma Dental Solution facilitou meu acesso ao tratamento odontológico. Agora posso sorrir com confiança!"</p>
-            <p><strong>- Ana Paula, beneficiária</strong></p>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main" id="conteudo-principal">
+      <!-- Visão do impacto -->
+      <section class="page-intro" aria-labelledby="titulo-principal">
+        <span class="eyebrow">Mural de impacto</span>
+        <h1 id="titulo-principal">Como a proposta pode tornar o impacto mais visível</h1>
+        <p class="lead">
+          Uma visão de acompanhamento de jornadas, acolhimento e participação da rede. Os valores ilustram um
+          cenário de referência, não resultados reais.
+        </p>
+      </section>
+      <section class="page-shell content-card" aria-labelledby="indicadores">
+        <h2 id="indicadores">Indicadores de acompanhamento</h2>
+        <div class="impact-grid">
+          <article class="impact-card">
+            <span class="tag">Triagem</span>
+            <strong>5.000</strong>
+            <p>jornadas que uma interface futura poderia organizar</p>
+            <div
+              class="meter"
+              role="progressbar"
+              aria-label="Meta de referência de triagem"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="78"
+            >
+              <span class="meter-78"></span>
+            </div>
+          </article>
+          <article class="impact-card">
+            <span class="tag">Acolhimento</span>
+            <strong>1.200</strong>
+            <p>possíveis acompanhamentos de beneficiárias</p>
+            <div
+              class="meter"
+              role="progressbar"
+              aria-label="Meta de referência de acolhimento"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="64"
+            >
+              <span class="meter-64"></span>
+            </div>
+          </article>
+          <article class="impact-card">
+            <span class="tag">Rede</span>
+            <strong>800</strong>
+            <p>profissionais voluntários em uma visão de expansão</p>
+            <div
+              class="meter"
+              role="progressbar"
+              aria-label="Meta de referência da rede"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="72"
+            >
+              <span class="meter-72"></span>
+            </div>
+          </article>
+          <article class="impact-card">
+            <span class="tag">Experiência</span>
+            <strong>30%</strong>
+            <p>de agilidade como hipótese de melhoria de jornada</p>
+            <div
+              class="meter"
+              role="progressbar"
+              aria-label="Hipótese de impacto de agilidade"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="30"
+            >
+              <span class="meter-30"></span>
+            </div>
+          </article>
         </div>
-
-        <div class="depoimento">
-            <p>"Como dentista voluntário, a triagem digital me permite atender mais pacientes e otimizar meu tempo."</p>
-            <p><strong>- Dr. Carlos Mendes, Dentista do Bem</strong></p>
+        <div
+          class="table-wrapper"
+          tabindex="0"
+          role="region"
+          aria-label="Tabela de indicadores de referência"
+        >
+          <table>
+            <caption class="sr-only">Tabela de metas de referência do projeto</caption>
+            <thead>
+              <tr>
+                <th scope="col">Indicador</th>
+                <th scope="col">Alcance</th>
+                <th scope="col">Meta visual</th>
+                <th scope="col">Contexto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Indicador">Jornadas de pré-triagem</td>
+                <td data-label="Alcance">Nacional</td>
+                <td data-label="Meta visual">5.000</td>
+                <td data-label="Contexto">Cenário ilustrativo</td>
+              </tr>
+              <tr>
+                <td data-label="Indicador">Acolhimento de mulheres</td>
+                <td data-label="Alcance">Sudeste e Nordeste</td>
+                <td data-label="Meta visual">1.200</td>
+                <td data-label="Contexto">Exemplo de acompanhamento</td>
+              </tr>
+              <tr>
+                <td data-label="Indicador">Rede de voluntários</td>
+                <td data-label="Alcance">Brasil</td>
+                <td data-label="Meta visual">800</td>
+                <td data-label="Contexto">Exemplo de expansão</td>
+              </tr>
+              <tr>
+                <td data-label="Indicador">Tempo de espera</td>
+                <td data-label="Alcance">Experiência digital</td>
+                <td data-label="Meta visual">30% de agilidade</td>
+                <td data-label="Contexto">Hipótese de impacto</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
-        <div class="depoimento">
-            <p>"O impacto social da Turma do Bem é incrível. A tecnologia está transformando vidas!"</p>
-            <p><strong>- Mariana Silva, Doadora</strong></p>
+      </section>
+      <!-- Necessidades dos públicos envolvidos -->
+      <section class="page-shell" aria-labelledby="relatos">
+        <div class="section-heading">
+          <span class="eyebrow">Pontos de vista</span>
+          <h2 id="relatos">O que importa para cada público</h2>
         </div>
-    </div>
-</section>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <h3>Beneficiários</h3>
+            <p>
+              Entender por onde começar e o que esperar de cada etapa, com linguagem simples e acolhedora.
+            </p>
+          </article>
+          <article class="testimonial-card">
+            <h3>Dentistas voluntários</h3>
+            <p>Conhecer o contexto da jornada e as possibilidades de participação na rede de atendimento.</p>
+          </article>
+          <article class="testimonial-card">
+            <h3>Organizações parceiras</h3>
+            <p>
+              Acompanhar indicadores claros para compreender a proposta de impacto social e as formas de
+              apoio.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Dental Solution - Projeto desenvolvido para a Turma do Bem e FIAP.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>© 2026 Dental Solution. Projeto acadêmico desenvolvido para o Challenge FIAP.</p>
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

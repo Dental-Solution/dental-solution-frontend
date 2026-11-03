@@ -1,88 +1,226 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipe - Dental Solution</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-</head>
-<body class="pagina-integrantes">
-
-    <header>
-    <a href="../index.html" class="logo-link">
-        <img src="../img/logo.jpg" alt="Logo Dental Solution" class="logo-header">
-    </a>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conheça a equipe responsável pelo Dental Solution." />
+    <title>Equipe | Dental Solution</title>
+    <link rel="stylesheet" href="../css/estilo.css?v=20261103-1651" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body class="pagina-integrantes">
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+    <!-- Cabeçalho e navegação principal -->
+    <header class="site-header">
+      <div class="header-content">
+        <a href="../index.html" class="logo-link" aria-label="Dental Solution: voltar para a página inicial">
+          <img
+            src="../img/web/logo.webp"
+            alt="Logo da Dental Solution"
+            class="logo-header"
+            width="48"
+            height="48"
+          />
+          <span>
+            <span class="logo-name">Dental Solution</span>
+            <span class="logo-tagline">Conexões que transformam sorrisos</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-menu-toggle
+          aria-label="Abrir menu principal"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" data-site-nav aria-label="Navegação principal">
+          <ul>
+            <li><a href="../index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="solucao.html">Solução</a></li>
+            <li><a href="triagem.html">Triagem</a></li>
             <li><a href="mural.html">Mural</a></li>
-            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="integrantes.html" aria-current="page">Equipe</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</header>
-    <main>
-        <section class="conteudo-pagina">
-            <h2>Integrantes do Grupo</h2>
-            <p>Equipe responsável pelo desenvolvimento da plataforma Dental Solution:</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Foto</th>
-                        <th>Nome Completo</th>
-                        <th>RM</th>
-                        <th>Perfis</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="../img/DavidPucinelli.jpeg" alt="Foto de David Pucinelli" width="60"></td>
-                        <td>David Pucinelli da Silva</td>
-                        <td>RM576788</td>
-                        <td>
-                            <div><a href="https://github.com/DavidPucinelli" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-                            <div><a href="https://www.linkedin.com/in/david-pucinelli-b326a9257" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="../img/EnzoFukimoto.jpg" alt="Foto de Enzo Fukimoto" width="60"></td>
-                        <td>Enzo Henrique Debiage Câmara Fukimoto</td>
-                        <td>RM575754</td>
-                        <td>
-                            <div><a href="https://github.com/Enzofukimoto" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-                            <div><a href="https://www.linkedin.com/in/enzo-câmara-a691b8318/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="../img/Marcos.jpeg" alt="Foto de Marcos Paulo" width="60"></td>
-                        <td>Marcos Paulo de Souza</td>
-                        <td>RM575557</td>
-                        <td>
-                            <div><a href="https://github.com/marcospaulo13" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-                            <div><a href="https://www.linkedin.com/in/marcos-souza-50615b180/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="../img/Luiz.jpg" alt="Foto de Luiz Felipe" width="60"></td>
-                        <td>Luiz Felipe Marques Gomes</td>
-                        <td>RM576768</td>
-                        <td>
-                            <div><a href="https://github.com/luizfelipe-m" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-                            <div><a href="https://www.linkedin.com/in/luiz-felipe-marques-gomes-036b90335/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main" id="conteudo-principal">
+      <!-- Identificação da equipe -->
+      <section class="page-intro" aria-labelledby="titulo-principal">
+        <span class="eyebrow">Turma 1TDSPB</span>
+        <h1 id="titulo-principal">Equipe responsável pelo Dental Solution</h1>
+        <p class="lead">
+          Conheça os integrantes que pesquisaram, estruturaram e evoluíram a proposta visual da Sprint 02.
+        </p>
+      </section>
+      <section class="page-shell team-grid" aria-labelledby="integrantes">
+        <h2 id="integrantes" class="sr-only">Integrantes do grupo</h2>
+        <article class="team-card">
+          <img
+            src="../img/web/DavidPucinelli.webp"
+            alt="Foto de David Pucinelli da Silva"
+            width="86"
+            height="86"
+            loading="lazy"
+          />
+          <div>
+            <h3>David Pucinelli da Silva</h3>
+            <p>
+              <strong>RM:</strong>
+              576788 ·
+              <strong>Turma:</strong>
+              1TDSPB
+            </p>
+            <p>Front-end e estrutura HTML/CSS.</p>
+            <div class="profile-links">
+              <a href="https://github.com/DavidPucinelli" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a
+                href="https://www.linkedin.com/in/david-pucinelli-b326a9257"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <img
+            src="../img/web/EnzoFukimoto.webp"
+            alt="Foto de Enzo Henrique Debiage Câmara Fukimoto"
+            width="86"
+            height="86"
+            loading="lazy"
+          />
+          <div>
+            <h3>Enzo Henrique Debiage Câmara Fukimoto</h3>
+            <p>
+              <strong>RM:</strong>
+              575754 ·
+              <strong>Turma:</strong>
+              1TDSPB
+            </p>
+            <p>Documentação técnica e testes de interface.</p>
+            <div class="profile-links">
+              <a href="https://github.com/Enzofukimoto" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a
+                href="https://www.linkedin.com/in/enzo-c%C3%A2mara-a691b8318/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <img
+            src="../img/web/Marcos.webp"
+            alt="Foto de Marcos Paulo de Souza"
+            width="86"
+            height="86"
+            loading="lazy"
+          />
+          <div>
+            <h3>Marcos Paulo de Souza</h3>
+            <p>
+              <strong>RM:</strong>
+              575557 ·
+              <strong>Turma:</strong>
+              1TDSPB
+            </p>
+            <p>Revisão de código e supervisão.</p>
+            <div class="profile-links">
+              <a href="https://github.com/marcospaulo13" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a
+                href="https://www.linkedin.com/in/marcos-souza-50615b180/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <img
+            src="../img/web/Luiz.webp"
+            alt="Foto de Luiz Felipe Marques Gomes"
+            width="86"
+            height="86"
+            loading="lazy"
+          />
+          <div>
+            <h3>Luiz Felipe Marques Gomes</h3>
+            <p>
+              <strong>RM:</strong>
+              576768 ·
+              <strong>Turma:</strong>
+              1TDSPB
+            </p>
+            <p>Revisão de código e controle de versionamento.</p>
+            <div class="profile-links">
+              <a href="https://github.com/luiz-felipe-m" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a
+                href="https://www.linkedin.com/in/luiz-felipe-marques-gomes-036b90335/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="team-card">
+          <img
+            src="../img/web/GustavoAlmeida.webp"
+            alt="Foto de Gustavo Almeida Rodrigues"
+            width="110"
+            height="110"
+            loading="lazy"
+          />
+          <div>
+            <h3>Gustavo Almeida Rodrigues</h3>
+            <p>
+              <strong>RM:</strong>
+              576939 ·
+              <strong>Turma:</strong>
+              1TDSPB
+            </p>
+            <p>Desenvolvimento front-end e direção visual.</p>
+            <div class="profile-links">
+              <a href="https://github.com/gtzall" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a
+                href="https://www.linkedin.com/in/gustavo-almeida-rodrigues"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Dental Solution - Projeto desenvolvido para a Turma do Bem e FIAP.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>© 2026 Dental Solution. Projeto acadêmico desenvolvido para o Challenge FIAP.</p>
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
