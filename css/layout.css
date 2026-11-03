@@ -145,15 +145,13 @@
   isolation: isolate;
   width: 100%;
   min-height: 520px;
+  --intro-image-top: -96px;
   margin: 0;
   padding: clamp(3rem, 8vw, 7rem) max(calc((100vw - var(--max)) / 2), 1.5rem) clamp(4.5rem, 8vw, 7rem);
   display: grid;
   align-content: center;
   background: transparent;
   overflow: visible;
-}
-.page-intro {
-  --intro-image-top: -96px;
 }
 .page-intro::before,
 .page-intro::after {

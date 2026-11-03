@@ -63,11 +63,7 @@ body.pagina-integrantes {
   --page-image-position: center 58%;
   --page-image-mobile-position: center center;
 }
-body.pagina-faq {
-  --page-image: none;
-  --page-image-position: center center;
-  --page-image-mobile-position: center center;
-}
+body.pagina-faq,
 body.pagina-contato {
   --page-image: none;
   --page-image-position: center center;

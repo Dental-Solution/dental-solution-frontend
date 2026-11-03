@@ -25,9 +25,6 @@
     color 0.2s ease,
     border-color 0.2s ease;
 }
-.action-outline {
-  border-radius: 6px;
-}
 .icon-inline {
   width: 1rem;
   height: 1rem;
@@ -38,33 +35,33 @@
   stroke-linejoin: round;
   stroke-width: 1.8;
 }
-.action {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.64);
-  background: rgba(43, 95, 72, 0.88);
-  -webkit-backdrop-filter: blur(14px) saturate(145%);
-  backdrop-filter: blur(14px) saturate(145%);
-  box-shadow: var(--shadow);
-}
-.action:hover {
-  color: #fff;
-  background: var(--green-dark);
-  transform: translateY(-2px);
-}
+.action,
 .action-secondary {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.64);
-  background: rgba(8, 59, 102, 0.88);
   -webkit-backdrop-filter: blur(14px) saturate(145%);
   backdrop-filter: blur(14px) saturate(145%);
   box-shadow: var(--shadow);
 }
+.action {
+  background: rgba(43, 95, 72, 0.88);
+}
+.action-secondary {
+  background: rgba(8, 59, 102, 0.88);
+}
+.action:hover,
 .action-secondary:hover {
   color: #fff;
-  background: var(--blue-deep);
   transform: translateY(-2px);
 }
+.action:hover {
+  background: var(--green-dark);
+}
+.action-secondary:hover {
+  background: var(--blue-deep);
+}
 .action-outline {
+  border-radius: 6px;
   border-color: rgba(8, 59, 102, 0.28);
   color: var(--blue);
   background: rgba(255, 255, 255, 0.82);
@@ -182,16 +179,17 @@
   font-weight: 500;
   text-align: right;
 }
-.feature-card {
-  grid-column: span 4;
+.feature-card,
+.step-card {
   padding: 1.25rem;
+  border: 1px solid var(--line);
   border-top: 2px solid var(--green);
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  border-left: 1px solid var(--line);
   border-radius: 18px;
   background: var(--paper);
   box-shadow: var(--shadow);
+}
+.feature-card {
+  grid-column: span 4;
 }
 .feature-card:nth-child(2) {
   margin-top: 2rem;
@@ -252,16 +250,6 @@
 /* Etapas da solução: quatro colunas, duas no tablet e uma no celular. */
 .step-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.step-card {
-  padding: 1.25rem;
-  border-top: 2px solid var(--green);
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  border-left: 1px solid var(--line);
-  border-radius: 18px;
-  background: var(--paper);
-  box-shadow: var(--shadow);
 }
 
 .solution-showcase {

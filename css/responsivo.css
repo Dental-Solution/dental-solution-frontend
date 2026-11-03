@@ -124,7 +124,6 @@
     order: -1;
   }
   .team-card {
-    grid-column: span 6;
     min-height: 16.25rem;
   }
   .team-grid {
@@ -210,13 +209,9 @@
     grid-template-columns: 1fr;
   }
   .feature-card,
-  .feature-card:nth-child(2),
-  .feature-card:nth-child(3) {
+  .feature-card:nth-child(2) {
     grid-column: auto;
     margin-top: 0;
-  }
-  .stat-grid {
-    gap: 0;
   }
   .stat-card,
   .stat-card + .stat-card {
@@ -236,9 +231,6 @@
     display: flex;
     flex-direction: column;
   }
-  .triage-card {
-    order: 0;
-  }
   .triage-summary {
     order: 1;
   }
@@ -246,27 +238,22 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .solution-showcase {
-    grid-template-columns: minmax(0, 1fr);
     gap: 0;
     margin-top: 3.4rem;
     margin-bottom: 3.4rem;
   }
   .solution-showcase-media {
-    grid-column: 1;
-    grid-row: 1;
     height: auto;
     aspect-ratio: 4 / 3;
     border-radius: 22px;
   }
   .solution-showcase-card {
-    grid-column: 1;
     grid-row: 2;
     align-self: start;
     justify-self: stretch;
     width: auto;
     padding: 1.15rem;
     margin: -1.8rem 0.7rem 0;
-    border-radius: 20px;
   }
   .table-wrapper {
     overflow: visible;
