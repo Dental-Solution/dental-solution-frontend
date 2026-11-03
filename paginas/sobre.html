@@ -1,56 +1,118 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre o Projeto - Dental Solution</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-</head>
-<body class="pagina-sobre">
-
-    <header>
-    <a href="../index.html" class="logo-link">
-        <img src="../img/logo.jpg" alt="Logo Dental Solution" class="logo-header">
-    </a>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conheça a proposta, missão e pilares da Dental Solution." />
+    <title>Sobre | Dental Solution</title>
+    <link rel="stylesheet" href="../css/estilo.css?v=20261103-1651" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body class="pagina-sobre">
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+    <!-- Cabeçalho e navegação principal -->
+    <header class="site-header">
+      <div class="header-content">
+        <a href="../index.html" class="logo-link" aria-label="Dental Solution: voltar para a página inicial">
+          <img
+            src="../img/web/logo.webp"
+            alt="Logo da Dental Solution"
+            class="logo-header"
+            width="48"
+            height="48"
+          />
+          <span>
+            <span class="logo-name">Dental Solution</span>
+            <span class="logo-tagline">Conexões que transformam sorrisos</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-menu-toggle
+          aria-label="Abrir menu principal"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" data-site-nav aria-label="Navegação principal">
+          <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="sobre.html" aria-current="page">Sobre</a></li>
             <li><a href="solucao.html">Solução</a></li>
+            <li><a href="triagem.html">Triagem</a></li>
             <li><a href="mural.html">Mural</a></li>
-            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="integrantes.html">Equipe</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</header>
-
-    <main>
-        <section class="conteudo-pagina">
-            <h2>Sobre a Iniciativa</h2>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main" id="conteudo-principal">
+      <!-- Contexto da iniciativa -->
+      <section class="page-intro" aria-labelledby="titulo-principal">
+        <span class="eyebrow">Sobre a iniciativa</span>
+        <h1 id="titulo-principal">Tecnologia com foco em acolhimento e acesso</h1>
+        <p class="lead">
+          A Dental Solution nasce como uma proposta de interface para tornar a jornada de triagem e
+          encaminhamento odontológico mais clara, humana e fácil de acompanhar.
+        </p>
+      </section>
+      <section class="page-shell content-card" aria-labelledby="missao">
+        <div>
+          <h2 id="missao">Nossa missão</h2>
+          <p>
+            Reduzir barreiras de informação e aproximar pessoas em situação de vulnerabilidade de redes de
+            apoio odontológico, com comunicação simples e uma experiência digital acolhedora.
+          </p>
+          <p>
+            Este é um projeto acadêmico que apresenta visualmente uma possível jornada de pré-triagem. Ele não
+            substitui profissionais, não realiza diagnóstico e não armazena dados.
+          </p>
+        </div>
+      </section>
+      <!-- Pilares da proposta -->
+      <section class="page-shell" aria-labelledby="pilares">
+        <div class="section-heading">
+          <span class="eyebrow">Princípios</span>
+          <h2 id="pilares">Pilares da plataforma</h2>
+        </div>
+        <div class="card-grid">
+          <article class="feature-card">
+            <h3>Inclusão social</h3>
+            <p>Uma linguagem que acolhe, informa e respeita diferentes realidades de acesso à saúde bucal.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Organização digital</h3>
             <p>
-                O <strong>Dental Solution</strong> nasce com o desafio de otimizar a triagem e o encaminhamento 
-                de tratamentos odontológicos gratuitos oferecidos pela ONG <strong>Turma do Bem</strong>.
+              Etapas visuais tornam a jornada compreensível e ajudam a explicar o próximo passo ao usuário.
             </p>
-
-            <h3>Nossa Missão</h3>
+          </article>
+          <article class="feature-card">
+            <h3>Uso responsável de dados</h3>
             <p>
-                Reduzir filas de espera e aproximar dentistas voluntários de jovens e mulheres que precisam 
-                de atendimento especializado com agilidade e humanização.
+              A plataforma evidencia a necessidade de transparência, consentimento e segurança para futuras
+              integrações.
             </p>
-
-            <h3>Pilares da Plataforma</h3>
-            <ul>
-                <li><strong>Inclusão Social:</strong> Restauração da saúde e da auto-estima de pessoas em vulnerabilidade.</li>
-                <li><strong>Otimização Digital:</strong> Triagem automatizada para reduzir o tempo de espera.</li>
-                <li><strong>Segurança de Dados:</strong> Conformidade com a LGPD para proteger a privacidade dos atendidos.</li>
-            </ul>
-        </section>
+          </article>
+        </div>
+      </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Dental Solution - Projeto desenvolvido para a Turma do Bem e FIAP.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>© 2026 Dental Solution. Projeto acadêmico desenvolvido para o Challenge FIAP.</p>
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

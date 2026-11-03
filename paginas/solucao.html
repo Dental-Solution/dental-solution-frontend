@@ -1,51 +1,166 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa Solução - Dental Solution</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-</head>
-<body class="pagina-solucao">
-
-   <header>
-    <a href="../index.html" class="logo-link">
-        <img src="../img/logo.jpg" alt="Logo Dental Solution" class="logo-header">
-    </a>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Veja como a Dental Solution organiza visualmente a jornada de pré-triagem e acompanhamento."
+    />
+    <title>Solução | Dental Solution</title>
+    <link rel="stylesheet" href="../css/estilo.css?v=20261103-1651" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body class="pagina-solucao">
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+    <!-- Cabeçalho e navegação principal -->
+    <header class="site-header">
+      <div class="header-content">
+        <a href="../index.html" class="logo-link" aria-label="Dental Solution: voltar para a página inicial">
+          <img
+            src="../img/web/logo.webp"
+            alt="Logo da Dental Solution"
+            class="logo-header"
+            width="48"
+            height="48"
+          />
+          <span>
+            <span class="logo-name">Dental Solution</span>
+            <span class="logo-tagline">Conexões que transformam sorrisos</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-menu-toggle
+          aria-label="Abrir menu principal"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" data-site-nav aria-label="Navegação principal">
+          <ul>
+            <li><a href="../index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="solucao.html" aria-current="page">Solução</a></li>
+            <li><a href="triagem.html">Triagem</a></li>
             <li><a href="mural.html">Mural</a></li>
-            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="integrantes.html">Equipe</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</header>
-
-    <main>
-        <section class="conteudo-pagina">
-            <h2>Nossa Solução Tecnológica</h2>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main" id="conteudo-principal">
+      <!-- Visão geral da solução -->
+      <section class="page-intro" aria-labelledby="titulo-principal">
+        <span class="eyebrow">A solução proposta</span>
+        <h1 id="titulo-principal">Uma jornada visual para orientar, conectar e acompanhar</h1>
+        <p class="lead">
+          Perfil, contexto, revisão e orientação: quatro momentos para compreender o caminho de acolhimento em
+          saúde bucal.
+        </p>
+        <div class="action-row">
+          <a class="action" href="triagem.html">
+            Experimentar a pré-triagem
+            <svg class="icon-inline" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+              <path d="M5 12h13M13 6l6 6-6 6" />
+            </svg>
+          </a>
+          <a class="action-outline" href="#etapas">Ver as etapas</a>
+        </div>
+      </section>
+      <!-- Etapas visuais da solução -->
+      <section class="page-shell" id="etapas" aria-labelledby="titulo-etapas">
+        <div class="section-heading">
+          <span class="eyebrow">Fluxo de atendimento</span>
+          <h2 id="titulo-etapas">Quatro momentos que dão forma à proposta</h2>
+          <p>
+            Cada etapa foi criada para explicar a experiência e não para substituir regras clínicas, análise
+            socioeconômica ou atendimento humano.
+          </p>
+        </div>
+        <div class="step-grid">
+          <article class="step-card">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3>Boas-vindas</h3>
+            <p>O usuário escolhe qual perfil deseja representar na jornada e entende o objetivo do fluxo.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3>Informações iniciais</h3>
+            <p>Região e necessidade de atenção são apresentadas como perguntas simples de orientação.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3>Revisão guiada</h3>
+            <p>Um resumo visual permite conferir as respostas antes de visualizar um resultado educativo.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number" aria-hidden="true">4</div>
+            <h3>Próximo passo</h3>
             <p>
-                A plataforma integra um Chatbot no Telegram a um painel de gestão simples, 
-                permitindo realizar a pré-triagem dos beneficiários de maneira ágil.
+              A experiência explica como um encaminhamento futuro poderia ser comunicado com transparência.
             </p>
-
-            <h3>Fluxo de Atendimento</h3>
-            <ol>
-                <li><strong>Pré-triagem Inicial:</strong> O beneficiário responde às perguntas pelo Chatbot do Telegram.</li>
-                <li><strong>Análise Socioeconômica:</strong> O sistema classifica a urgência e elegibilidade do atendimento.</li>
-                <li><strong>Mapeamento Geográfico:</strong> Cruzamento de localização para encontrar o dentista mais próximo.</li>
-                <li><strong>Acompanhamento:</strong> Monitoramento contínuo das consultas e conclusão do tratamento.</li>
-            </ol>
-        </section>
+          </article>
+        </div>
+      </section>
+      <section class="page-shell solution-showcase" aria-labelledby="cuidado-em-rede">
+        <figure class="solution-showcase-media">
+          <img
+            src="../img/web/fundo-sobre.webp"
+            alt="Profissionais de odontologia reunidos para atender uma paciente"
+            width="1600"
+            height="1067"
+            loading="lazy"
+          />
+        </figure>
+        <div class="solution-showcase-card">
+          <span class="eyebrow">O cuidado em rede</span>
+          <h2 id="cuidado-em-rede">Por trás de cada etapa, pessoas reais</h2>
+          <p>
+            A jornada digital organiza informações para aproximar pessoas, profissionais voluntários e
+            organizações parceiras.
+          </p>
+          <a class="text-link" href="sobre.html">Conhecer a proposta</a>
+        </div>
+      </section>
+      <!-- Chamada para a jornada -->
+      <section class="page-shell section-panel split-layout" aria-labelledby="demonstracao">
+        <div>
+          <span class="eyebrow">Experiência navegável</span>
+          <h2 id="demonstracao">Explore a interface em ação</h2>
+          <p>
+            A jornada utiliza JavaScript próprio para avançar e retornar entre etapas, atualizar o progresso e
+            mostrar um resultado educativo baseado apenas nas opções escolhidas durante a sessão.
+          </p>
+        </div>
+        <div class="action-row">
+          <a class="action-secondary" href="triagem.html">
+            Abrir jornada
+            <svg class="icon-inline" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+              <path d="M5 12h13M13 6l6 6-6 6" />
+            </svg>
+          </a>
+          <a class="text-link" href="faq.html">Tirar dúvidas</a>
+        </div>
+      </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Dental Solution - Projeto desenvolvido para a Turma do Bem e FIAP.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>© 2026 Dental Solution. Projeto acadêmico desenvolvido para o Challenge FIAP.</p>
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
