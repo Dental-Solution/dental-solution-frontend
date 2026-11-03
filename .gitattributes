@@ -1,0 +1,10 @@
+# O ZIP acadêmico usa as versões otimizadas mantidas em img/web/.
+.gitattributes export-ignore
+img/DavidPucinelli.jpeg export-ignore
+img/EnzoFukimoto.jpg export-ignore
+img/Luiz.jpg export-ignore
+img/Marcos.jpeg export-ignore
+img/fundo-*.jpg export-ignore
+img/inicial.png export-ignore
+img/logo.jpg export-ignore
+img/sobre.png export-ignore
