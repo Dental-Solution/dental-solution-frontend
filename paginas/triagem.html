@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jornada navegável da pré-triagem da Dental Solution." />
+    <title>Jornada de Triagem | Dental Solution</title>
+    <link rel="stylesheet" href="../css/estilo.css?v=20261103-1651" />
+    <script src="../js/script.js" defer></script>
+    <script src="../js/triagem.js" defer></script>
+  </head>
+  <body class="pagina-triagem">
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+    <!-- Cabeçalho e navegação principal -->
+    <header class="site-header">
+      <div class="header-content">
+        <a href="../index.html" class="logo-link" aria-label="Dental Solution: voltar para a página inicial">
+          <img
+            src="../img/web/logo.webp"
+            alt="Logo da Dental Solution"
+            class="logo-header"
+            width="48"
+            height="48"
+          />
+          <span>
+            <span class="logo-name">Dental Solution</span>
+            <span class="logo-tagline">Conexões que transformam sorrisos</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-menu-toggle
+          aria-label="Abrir menu principal"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" data-site-nav aria-label="Navegação principal">
+          <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="triagem.html" aria-current="page">Triagem</a></li>
+            <li><a href="mural.html">Mural</a></li>
+            <li><a href="integrantes.html">Equipe</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main" id="conteudo-principal">
+      <!-- Jornada de orientação -->
+      <section class="page-shell" aria-labelledby="titulo-principal">
+        <div class="triage-layout">
+          <form class="triage-card" data-triage-form novalidate>
+            <header class="triage-header">
+              <span class="eyebrow">Jornada de pré-triagem</span>
+              <h1 id="titulo-principal">Vamos entender seu próximo passo</h1>
+              <p>Responda às etapas para visualizar como a interface organiza a jornada.</p>
+            </header>
+
+            <div class="progress-region" aria-label="Progresso da jornada">
+              <div class="progress-label">
+                <span>Progresso do fluxo</span>
+                <span data-triage-progress-text>Etapa 1 de 3</span>
+              </div>
+              <progress
+                class="triage-progress"
+                data-triage-progress
+                max="3"
+                value="1"
+                aria-label="Etapas concluídas"
+              >
+                1 de 3
+              </progress>
+            </div>
+
+            <!-- Etapa 1: perfil -->
+            <section class="triage-panel" data-triage-step="1" aria-labelledby="etapa-um">
+              <span class="eyebrow">Etapa 1</span>
+              <h2 id="etapa-um" tabindex="-1">Qual perfil representa você?</h2>
+              <p>Escolha uma opção para continuarmos a jornada.</p>
+              <fieldset class="choice-grid">
+                <legend class="sr-only">Escolha uma opção</legend>
+                <label class="choice-card">
+                  <input type="radio" name="perfil" value="jovem" />
+                  <strong>Jovem e responsável</strong>
+                  <span>Conhecer caminhos de atendimento para adolescentes.</span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="perfil" value="mulher" />
+                  <strong>Mulher que busca acolhimento</strong>
+                  <span>Explorar uma jornada de apoio e orientação.</span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="perfil" value="voluntario" />
+                  <strong>Dentista voluntário</strong>
+                  <span>Entender a visão de conexão com a rede.</span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="perfil" value="parceiro" />
+                  <strong>Parceiro ou apoiador</strong>
+                  <span>Visualizar como a proposta comunica impacto.</span>
+                </label>
+              </fieldset>
+              <p class="triage-feedback" data-triage-feedback aria-live="polite"></p>
+              <div class="form-actions">
+                <span></span>
+                <button class="action" type="button" data-triage-next>
+                  Continuar
+                  <svg class="icon-inline" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                    <path d="M5 12h13M13 6l6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </section>
+
+            <!-- Etapa 2: contexto inicial -->
+            <section class="triage-panel" data-triage-step="2" hidden aria-labelledby="etapa-dois">
+              <span class="eyebrow">Etapa 2</span>
+              <h2 id="etapa-dois" tabindex="-1">Seu contexto de atendimento</h2>
+              <p>As escolhas abaixo são usadas somente para montar o resumo visual desta sessão.</p>
+              <div class="field-group">
+                <label for="regiao">Região de referência</label>
+                <select id="regiao" name="regiao">
+                  <option value="">Selecione uma região</option>
+                  <option>Centro-Oeste</option>
+                  <option>Nordeste</option>
+                  <option>Norte</option>
+                  <option>Sudeste</option>
+                  <option>Sul</option>
+                </select>
+              </div>
+              <fieldset class="clean-list">
+                <legend><strong>Como você descreve a necessidade de atenção?</strong></legend>
+                <div class="choice-grid">
+                  <label class="choice-card">
+                    <input type="radio" name="urgencia" value="alta" />
+                    <strong>Preciso de atenção rápida</strong>
+                    <span>Dor intensa ou situação que merece orientação urgente.</span>
+                  </label>
+                  <label class="choice-card">
+                    <input type="radio" name="urgencia" value="media" />
+                    <strong>Quero uma avaliação em breve</strong>
+                    <span>Uma necessidade que pode ser organizada com orientação.</span>
+                  </label>
+                  <label class="choice-card">
+                    <input type="radio" name="urgencia" value="baixa" />
+                    <strong>Busco prevenção ou informação</strong>
+                    <span>Uma conversa inicial sobre saúde bucal e possibilidades.</span>
+                  </label>
+                </div>
+              </fieldset>
+              <p class="triage-feedback" data-triage-feedback aria-live="polite"></p>
+              <div class="form-actions">
+                <button class="action-outline" type="button" data-triage-back>Voltar</button>
+                <button class="action" type="button" data-triage-next>
+                  Continuar
+                  <svg class="icon-inline" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                    <path d="M5 12h13M13 6l6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </section>
+
+            <!-- Etapa 3: revisão e conclusão -->
+            <section class="triage-panel" data-triage-step="3" hidden aria-labelledby="etapa-tres">
+              <span class="eyebrow">Etapa 3</span>
+              <h2 id="etapa-tres" tabindex="-1">Revise suas escolhas</h2>
+              <p>Escolha o caminho de orientação que faz mais sentido para você.</p>
+              <fieldset class="choice-grid">
+                <legend class="sr-only">Escolha uma opção</legend>
+                <label class="choice-card">
+                  <input type="radio" name="disponibilidade" value="Prefiro receber orientação digital" />
+                  <strong>Orientação digital</strong>
+                  <span>Uma comunicação clara sobre possibilidades e próximos passos.</span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="disponibilidade" value="Prefiro conhecer opções de atendimento" />
+                  <strong>Opções de atendimento</strong>
+                  <span>Conhecer caminhos de orientação com profissionais e organizações parceiras.</span>
+                </label>
+              </fieldset>
+              <p class="triage-feedback" data-triage-feedback aria-live="polite"></p>
+              <div class="form-actions">
+                <button class="action-outline" type="button" data-triage-back>Voltar</button>
+                <button class="action" type="submit">
+                  Ver próximo passo
+                  <svg class="icon-inline" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                    <path d="M5 12h13M13 6l6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </section>
+          </form>
+
+          <!-- Resumo sempre visível das escolhas -->
+          <aside class="triage-summary" aria-labelledby="resumo-triagem">
+            <span class="eyebrow">Resumo visual</span>
+            <h2 id="resumo-triagem">Suas escolhas</h2>
+            <dl>
+              <div>
+                <dt>Perfil</dt>
+                <dd data-summary-profile>Não informado</dd>
+              </div>
+              <div>
+                <dt>Região</dt>
+                <dd data-summary-region>Não informado</dd>
+              </div>
+              <div>
+                <dt>Necessidade</dt>
+                <dd data-summary-urgency>Não informado</dd>
+              </div>
+              <div>
+                <dt>Preferência</dt>
+                <dd data-summary-availability>Não informado</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+
+        <!-- Próximo passo -->
+        <section
+          class="section-panel triage-result"
+          data-triage-result
+          hidden
+          aria-live="polite"
+          aria-labelledby="resultado-titulo"
+        >
+          <span class="eyebrow">Resultado da jornada</span>
+          <div class="result-box">
+            <h2 id="resultado-titulo" tabindex="-1" data-result-priority>Próximo passo</h2>
+            <p data-result-message>Conclua as etapas para visualizar uma mensagem educativa.</p>
+          </div>
+          <div class="action-row triage-result-actions">
+            <button class="action" type="button" data-triage-restart>
+              Recomeçar jornada
+              <svg class="icon-inline" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                <path d="M5 12h13M13 6l6 6-6 6" />
+              </svg>
+            </button>
+            <a class="action-outline" href="contato.html">Falar com a equipe</a>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>© 2026 Dental Solution. Projeto acadêmico desenvolvido para o Challenge FIAP.</p>
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
