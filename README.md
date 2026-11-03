@@ -18,6 +18,7 @@ Em telas estreitas, os títulos são redimensionados, a triagem apresenta o form
 - Menu hambúrguer que abre e fecha, anima o ícone e atualiza seu estado acessível; a tecla Escape fecha o menu e devolve o foco ao botão.
 - Formulário com validação de nome, e-mail e mensagem por JavaScript, erros próximos aos campos e foco no primeiro problema. Não é usado o atributo HTML `required`.
 - Jornada de pré-triagem em três etapas, com avanço e retorno, progresso, resumo das escolhas e resultado educativo.
+- Página Sobre com o contexto, a base HTML/CSS/JavaScript e os próximos passos da proposta de cuidado odontológico.
 - FAQ com perguntas expansíveis e Mural com indicadores de referência; a tabela do Mural é empilhada em cartões no celular.
 - Estados de foco de teclado e ajustes de fontes, espaços e colunas com `@media`.
 
