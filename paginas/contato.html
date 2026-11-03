@@ -1,54 +1,155 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Dental Solution</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-</head>
-<body class="pagina-contato">
-
-    <header>
-    <a href="../index.html" class="logo-link">
-        <img src="../img/logo.jpg" alt="Logo Dental Solution" class="logo-header">
-    </a>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fale com a equipe da Dental Solution por meio de um formulário com validação própria."
+    />
+    <title>Contato | Dental Solution</title>
+    <link rel="stylesheet" href="../css/estilo.css?v=20261103-1651" />
+    <script src="../js/script.js" defer></script>
+    <script src="../js/contato.js" defer></script>
+  </head>
+  <body class="pagina-contato">
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+    <!-- Cabeçalho e navegação principal -->
+    <header class="site-header">
+      <div class="header-content">
+        <a href="../index.html" class="logo-link" aria-label="Dental Solution: voltar para a página inicial">
+          <img
+            src="../img/web/logo.webp"
+            alt="Logo da Dental Solution"
+            class="logo-header"
+            width="48"
+            height="48"
+          />
+          <span>
+            <span class="logo-name">Dental Solution</span>
+            <span class="logo-tagline">Conexões que transformam sorrisos</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-menu-toggle
+          aria-label="Abrir menu principal"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" data-site-nav aria-label="Navegação principal">
+          <ul>
+            <li><a href="../index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="solucao.html">Solução</a></li>
+            <li><a href="triagem.html">Triagem</a></li>
             <li><a href="mural.html">Mural</a></li>
-            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="integrantes.html">Equipe</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</header>
-
-    <main>
-    <section class="conteudo-pagina">
-        <h2>Fale Conosco</h2>
-        <p>Envie sua mensagem ou dúvida preenchendo o formulário abaixo:</p>
-
-        <!-- Form configurado para recarregar a própria página em HTML puro -->
-        <form action="contato.html" method="get">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
-            
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
-            
-            <button type="submit">Enviar Mensagem</button>
+            <li><a href="contato.html" aria-current="page">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main" id="conteudo-principal">
+      <!-- Apresentação do canal de contato -->
+      <section class="page-intro" aria-labelledby="titulo-principal">
+        <span class="eyebrow">Contato</span>
+        <h1 id="titulo-principal">Fale com a equipe</h1>
+        <p class="lead">Conheça os canais da equipe e organize sua mensagem antes de entrar em contato.</p>
+      </section>
+      <section class="page-shell form-layout" aria-labelledby="formulario-titulo">
+        <!-- Formulário com validação por JavaScript -->
+        <form class="form-card" data-contact-form novalidate>
+          <h2 id="formulario-titulo">Prepare sua mensagem</h2>
+          <p>
+            A validação acontece no navegador. Para enviar a mensagem, use os perfis da equipe; este
+            formulário não realiza envio.
+          </p>
+          <div class="field-group">
+            <label for="nome">Nome completo</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              aria-required="true"
+              autocomplete="name"
+              maxlength="120"
+              placeholder="Seu nome"
+              aria-describedby="erro-nome"
+            />
+            <span id="erro-nome" class="field-error" data-error-for="nome" aria-live="polite"></span>
+          </div>
+          <div class="field-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-required="true"
+              autocomplete="email"
+              maxlength="254"
+              placeholder="nome@exemplo.com"
+              aria-describedby="erro-email"
+            />
+            <span id="erro-email" class="field-error" data-error-for="email" aria-live="polite"></span>
+          </div>
+          <div class="field-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              aria-required="true"
+              maxlength="3000"
+              placeholder="Como podemos ajudar?"
+              aria-describedby="erro-mensagem"
+            ></textarea>
+            <span id="erro-mensagem" class="field-error" data-error-for="mensagem" aria-live="polite"></span>
+          </div>
+          <button class="action" type="submit">
+            Validar mensagem
+            <svg class="icon-inline" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+              <path d="M5 12h13M13 6l6 6-6 6" />
+            </svg>
+          </button>
+          <p class="form-feedback" data-form-feedback aria-live="polite"></p>
         </form>
-    </section>
-</main>
-
-    <footer>
-        <p>&copy; 2026 Dental Solution - Projeto desenvolvido para a Turma do Bem e FIAP.</p>
+        <!-- Informações de apoio -->
+        <aside class="contact-aside" aria-labelledby="apoio-contato">
+          <span class="eyebrow">Canais da equipe</span>
+          <h2 id="apoio-contato">Vamos conversar</h2>
+          <p>
+            Os perfis dos integrantes são os canais para dúvidas sobre a iniciativa e sugestões de melhoria.
+          </p>
+          <a class="contact-team-link" href="integrantes.html" aria-label="Conheça os integrantes e veja seus canais">
+            <span class="contact-team-avatars" aria-hidden="true">
+              <img src="../img/web/DavidPucinelli.webp" alt="" width="46" height="46" loading="lazy" />
+              <img src="../img/web/EnzoFukimoto.webp" alt="" width="46" height="46" loading="lazy" />
+              <img src="../img/web/Luiz.webp" alt="" width="46" height="46" loading="lazy" />
+              <img src="../img/web/Marcos.webp" alt="" width="46" height="46" loading="lazy" />
+              <img src="../img/web/GustavoAlmeida.webp" alt="" width="46" height="46" loading="lazy" />
+            </span>
+            <span>Conheça a equipe e seus canais</span>
+          </a>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>© 2026 Dental Solution. Projeto acadêmico desenvolvido para o Challenge FIAP.</p>
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
