@@ -1,0 +1,241 @@
+/* Triagem e formulários: escolhas simples, validação clara e feedback visual. */
+.triage-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.36fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+.triage-card {
+  overflow: hidden;
+  border: 1px solid var(--line-dark);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+.triage-header {
+  padding: 1.5rem 1.6rem;
+  color: #fff;
+  background: var(--blue-deep);
+}
+.triage-header h1,
+.triage-header h2,
+.triage-header p,
+.triage-header .eyebrow {
+  color: #fff;
+}
+.triage-header h1,
+.triage-header h2 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+}
+.triage-header p {
+  margin-bottom: 0;
+}
+.progress-region {
+  padding: 1rem 1.6rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-warm);
+}
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.triage-progress {
+  display: block;
+  width: 100%;
+  height: 8px;
+  border: 0;
+  appearance: none;
+  background: #dfe8e0;
+}
+.triage-progress::-webkit-progress-bar {
+  background: #dfe8e0;
+}
+.triage-progress::-webkit-progress-value {
+  background: var(--blue);
+}
+.triage-progress::-moz-progress-bar {
+  background: var(--blue);
+}
+.triage-panel {
+  padding: clamp(1.35rem, 3vw, 2.35rem);
+}
+.triage-panel[hidden] {
+  display: none;
+}
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1.3rem 0 1.45rem;
+}
+.choice-card {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  padding: 1rem;
+  border: 1px solid var(--line-dark);
+  color: var(--ink);
+  background: var(--paper);
+}
+.choice-card:hover {
+  border-color: var(--blue);
+}
+.choice-card:focus-within {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+.choice-card input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.choice-card:has(input:checked) {
+  border-color: var(--blue);
+  box-shadow: inset 4px 0 var(--blue);
+  background: #eef6f8;
+}
+.choice-card strong,
+.choice-card span {
+  display: block;
+}
+.choice-card strong {
+  color: var(--blue-deep);
+  font-weight: 500;
+}
+.choice-card span {
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.triage-feedback,
+.form-feedback {
+  min-height: 1.5rem;
+  margin-top: 0.8rem;
+  color: var(--red);
+  font-weight: 500;
+}
+.triage-summary {
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  border-radius: 18px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+.triage-summary h2 {
+  font-size: 1.55rem;
+}
+.triage-summary dl {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1rem 0 0;
+}
+.triage-summary div {
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--line);
+}
+.triage-summary dt {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.triage-summary dd {
+  margin: 0.1rem 0 0;
+  color: var(--blue-deep);
+  font-weight: 600;
+}
+.result-box {
+  padding: 1.3rem;
+  border-left: 4px solid var(--green);
+  background: var(--green-wash);
+}
+.result-box h2,
+.result-box p {
+  color: var(--green-dark);
+}
+.form-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+.form-card {
+  padding: clamp(1.25rem, 3vw, 2.4rem);
+  border: 1px solid var(--line-dark);
+  background: var(--paper);
+}
+.field-group {
+  margin-bottom: 1rem;
+}
+.field-group label {
+  display: block;
+  margin-bottom: 0.38rem;
+  color: var(--blue-deep);
+  font-weight: 550;
+}
+.field-group input,
+.field-group textarea,
+.field-group select {
+  width: 100%;
+  padding: 0.78rem 0.85rem;
+  border: 1px solid var(--line-dark);
+  border-radius: 0;
+  color: var(--ink);
+  background: #fff;
+}
+.field-group textarea {
+  min-height: 138px;
+  resize: vertical;
+}
+.field-group input:focus,
+.field-group textarea:focus,
+.field-group select:focus {
+  border-color: var(--blue);
+  outline: 2px solid var(--blue);
+}
+.field-group input.is-invalid,
+.field-group textarea.is-invalid {
+  border-color: var(--red);
+  background: #fff7f6;
+}
+.field-error {
+  display: block;
+  min-height: 1.1rem;
+  margin-top: 0.32rem;
+  color: var(--red);
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+.form-feedback.is-success {
+  padding: 0.75rem 0.85rem;
+  color: #155f0d;
+  background: var(--green-wash);
+}
+.contact-aside {
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
+  border-radius: 18px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.triage-result {
+  margin-top: 2rem;
+  scroll-margin-top: 6rem;
+}
+.triage-result-actions {
+  margin-top: 1rem;
+}
