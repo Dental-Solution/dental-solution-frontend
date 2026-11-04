@@ -8,3 +8,8 @@ Deixar as fotos dos cinco integrantes mais leves para carregar, sem perder nitid
 Hoje os retratos são bem maiores do que o espaço em que aparecem nos cartões. A ideia é criar versões
 WebP quadradas em dois tamanhos e deixar o navegador escolher qual carregar, conforme a tela.
 
+Quando o menu do celular estiver aberto, permitir que a pessoa toque numa área vazia da página para 
+fechá-lo. Hoje ele já abre pelo botão, fecha ao escolher um link e responde à tecla Escape; falta o fechamento 
+ao tocar fora.
+
+
