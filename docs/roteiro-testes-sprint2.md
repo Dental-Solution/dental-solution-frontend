@@ -8,3 +8,4 @@ Deixar as fotos dos cinco integrantes mais leves para carregar, sem perder nitid
 Hoje os retratos são bem maiores do que o espaço em que aparecem nos cartões. A ideia é criar versões
 WebP quadradas em dois tamanhos e deixar o navegador escolher qual carregar, conforme a tela.
 
+As oito páginas HTML têm exatamente um h1.
