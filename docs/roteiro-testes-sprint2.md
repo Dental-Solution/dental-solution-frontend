@@ -12,4 +12,10 @@ Quando o menu do celular estiver aberto, permitir que a pessoa toque numa área 
 fechá-lo. Hoje ele já abre pelo botão, fecha ao escolher um link e responde à tecla Escape; falta o fechamento 
 ao tocar fora.
 
-
+Como conferir:
+Abra o site em largura móvel e abra o menu.
+Toque na área vazia: o menu deve fechar e o botão deve voltar a indicar aria-expanded="false".
+Toque dentro do menu: os links ainda devem funcionar.
+Confira que o botão continua abrindo/fechando e que Escape ainda fecha e devolve o foco ao botão.
+Confirme que a navegação desktop não foi afetada.
+Não é preciso mudar cores nem redesenhar o menu — o objetivo é só esse comportamento novo
