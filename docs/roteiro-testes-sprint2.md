@@ -8,4 +8,20 @@ Deixar as fotos dos cinco integrantes mais leves para carregar, sem perder nitid
 Hoje os retratos são bem maiores do que o espaço em que aparecem nos cartões. A ideia é criar versões
 WebP quadradas em dois tamanhos e deixar o navegador escolher qual carregar, conforme a tela.
 
-As oito páginas HTML têm exatamente um h1.
+Quando o menu do celular estiver aberto, permitir que a pessoa toque numa área vazia da página para 
+fechá-lo. Hoje ele já abre pelo botão, fecha ao escolher um link e responde à tecla Escape; falta o fechamento 
+ao tocar fora.
+
+Como conferir:
+Abra o site em largura móvel e abra o menu.
+Toque na área vazia: o menu deve fechar e o botão deve voltar a indicar aria-expanded="false".
+Toque dentro do menu: os links ainda devem funcionar.
+Confira que o botão continua abrindo/fechando e que Escape ainda fecha e devolve o foco ao botão.
+Confirme que a navegação desktop não foi afetada.
+Não é preciso mudar cores nem redesenhar o menu — o objetivo é só esse comportamento novo
+
+
+Links e imagens locais (href e src) apontam para arquivos existentes. Ignore links da internet e âncoras como #secao.
+As imagens têm alt.
+Folhas de estilo e scripts locais citados nas páginas existem.
+Quando encontrar problema, mostrar página e referência; retornar erro para o terminal. O script só verifica; não altera as páginas. Ele deve ser diferente do roteiro manual do Enzo: este confere a estrutura dos arquivos automaticamente.
