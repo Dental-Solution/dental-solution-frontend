@@ -20,7 +20,7 @@ Confira que o botão continua abrindo/fechando e que Escape ainda fecha e devolv
 Confirme que a navegação desktop não foi afetada.
 Não é preciso mudar cores nem redesenhar o menu — o objetivo é só esse comportamento novo
 
-
+1.3 O que o verificador precisa conferir
 Links e imagens locais (href e src) apontam para arquivos existentes. Ignore links da internet e âncoras como #secao.
 As imagens têm alt.
 Folhas de estilo e scripts locais citados nas páginas existem.
