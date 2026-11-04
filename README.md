@@ -73,8 +73,7 @@ dental-solution/
 │   ├── contato.js          # validação local do formulário
 │   └── triagem.js          # etapas, resumo e orientação educativa
 ├── img/
-│   ├── ...                 # originais preservados no repositório
-│   └── web/                # versões leves e captura usada neste README
+│   └── web/                # imagens leves usadas pelo site e pelo README
 ├── scripts/
 │   └── publicar.sh         # prepara a saída estática com arquivos versionados
 └── README.md
@@ -112,7 +111,7 @@ A rubrica exige repositório público, pelo menos dez commits significativos e c
 
 ## Imagens, ícones e referências
 
-No repositório, as imagens originais da Sprint 01 foram mantidas em `img/`; o site e o ZIP utilizam as versões leves de `img/web/`. O retrato de Gustavo e a fotografia do sorriso foram fornecidos para o projeto. A captura da Home foi feita a partir da interface implementada.
+As imagens usadas pelo site ficam em `img/web/` em versões leves; os arquivos originais que não eram referenciados foram removidos para manter o download do repositório enxuto. O retrato de Gustavo e a fotografia do sorriso foram fornecidos para o projeto. A captura da Home foi feita a partir da interface implementada.
 
 Galerias indicadas pela equipe — como Mobbin, UIverse, Supahero, Wensity e outras — serviram como referência de composição e interação. Não foram usados templates ou componentes externos para substituir o HTML, CSS e JavaScript exigidos na disciplina.
 
